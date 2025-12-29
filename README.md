@@ -1,2 +1,1 @@
-# cooperative-data-analysis
-Statistical analysis of cooperative activity status based on age and membership size.
+Statistical analysis of cooperative age and membership size in relation to active and inactive status using Jamovi.
