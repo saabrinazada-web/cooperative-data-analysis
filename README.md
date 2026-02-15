@@ -1,42 +1,54 @@
-# Cooperative Data Analysis
+# Cooperative Sustainability Analysis
 
 ## Overview
-This project analyzes the relationship between **cooperative age**, **number of members**, and **operational status (active or inactive)** using statistical methods. The analysis was conducted using administrative and monitoring data from cooperatives supervised by the **Department of Cooperatives and MSMEs of Semarang City**.
 
-The project aims to support data-driven evaluation of cooperative sustainability.
+This project examines structural factors associated with cooperative sustainability using administrative and monitoring data from cooperatives supervised by the Department of Cooperatives and MSMEs of Semarang City.
 
-## Research Objective
-The main objective of this study is to examine whether:
-- Older cooperatives tend to remain active.
-- Cooperatives with more members have a higher likelihood of being operational.
+The analysis evaluates the relationship between cooperative age, number of registered members, and operational status (active or inactive) in order to identify structural patterns linked to organizational continuity.
 
-This analysis provides insight into structural factors associated with cooperative performance.
+The objective is to support evidence-based monitoring and institutional evaluation within the cooperative sector.
 
-## Data Description
+## Research Objectives
+
+This study investigates whether:
+
+- Older cooperatives demonstrate stronger operational stability.
+- Cooperatives with larger membership bases exhibit a higher likelihood of remaining active.
+
+The analysis focuses on identifying statistically meaningful associations rather than establishing causal relationships.
+
+## Dataset Description
+
 The dataset includes:
-- Cooperative age  
-- Number of registered members  
-- Activity status (active or inactive)  
 
-These variables represent key indicators commonly used in cooperative monitoring and supervision.
+- Cooperative age (years of operation)
+- Number of registered members
+- Operational status (Active / Inactive)
+
+These variables represent structural indicators commonly used in cooperative supervision and performance assessment.
 
 ## Methodology
-The analysis was performed using **Jamovi** with the following steps:
-- Data cleaning and verification  
-- Variable classification  
-- Statistical association and correlation analysis  
-- Interpretation of relationships between organizational structure and activity status  
 
-The focus is on identifying meaningful patterns rather than causal inference.
+The analytical process consisted of:
+
+1. Data validation and cleaning  
+2. Variable classification and transformation  
+3. Statistical association and correlation analysis  
+4. Interpretation of structural relationships with operational status  
+
+The analysis was conducted using structured statistical evaluation methods to identify relevant organizational patterns.
 
 ## Tools and Technologies
+
 - Jamovi  
 - Microsoft Excel  
 
-## Project Context
-This project was developed during an **internship at the Department of Cooperatives and MSMEs of Semarang City** as part of data validation, monitoring, and evaluation activities.
+## Key Insights
 
-## Author
-**Sabrina Zada**  
-Mathematics Undergraduate  
-Universitas Negeri Semarang
+- Organizational maturity shows observable association with operational continuity.
+- Membership scale appears to contribute to institutional resilience.
+- Statistical validation supports data-driven cooperative monitoring practices.
+
+## Project Context
+
+Developed as part of institutional monitoring and evaluation activities at the Department of Cooperatives and MSMEs of Semarang City.
