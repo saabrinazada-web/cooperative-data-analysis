@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project presents an exploratory data analysis of a cooperative registry dataset using MySQL. The objective is to transform raw structured data into analytical insights through systematic data cleaning, feature engineering, aggregation, and ranking techniques.
+This project presents an exploratory data analysis of a cooperative registry dataset using MySQL. The objective is to transform structured raw data into analytical insights through systematic data cleaning, feature engineering, aggregation, and ranking techniques.
 
 The dataset consists of 100 cooperative entities containing cooperative names and address information.
 
@@ -10,48 +10,49 @@ The dataset consists of 100 cooperative entities containing cooperative names an
 
 The analysis aims to:
 
-- Evaluate data quality and structural consistency
-- Extract district-level information from unstructured address fields
+- Assess data quality and structural consistency
+- Extract district-level information from address fields
 - Classify cooperatives based on operational type
-- Measure category distribution and contribution percentages
+- Measure distribution and contribution percentages
 - Identify geographic concentration patterns
 - Detect duplicate entity records
 
-## Dataset
+## Dataset Structure
 
 The dataset includes:
 
-- Cooperative identifier (no)
-- Cooperative name
-- Cooperative address
+- Cooperative identifier (`no`)
+- Cooperative name (`nama_koperasi`)
+- Cooperative address (`alamat`)
 
-The address field was transformed to derive district-level grouping for spatial distribution analysis.
+The address field was transformed to derive district-level segmentation for spatial distribution analysis.
 
-## Methodology
+## Analytical Approach
 
-The analytical workflow included:
+The analytical workflow includes:
 
-1. Data cleaning and normalization using a dedicated SQL VIEW layer  
-2. Feature engineering through string manipulation functions  
-3. Aggregation and segmentation by cooperative category  
-4. Window functions for ranking and contribution analysis  
-5. Data integrity validation through duplicate detection  
+1. Data normalization using a dedicated SQL VIEW layer  
+2. Feature engineering via string manipulation functions  
+3. Category segmentation using conditional logic  
+4. Aggregation and percentage distribution analysis  
+5. District-level ranking using window functions  
+6. Duplicate detection and structural validation  
 
-The analysis focuses on structural exploration and descriptive insights rather than predictive modeling.
+The analysis focuses on descriptive exploration and structural insight extraction rather than predictive modeling.
 
 ## Key Insights
 
-- Cooperative distribution shows geographic concentration in specific districts.
+- Cooperative distribution shows measurable geographic concentration across districts.
 - Consumer and Savings & Loans cooperatives represent the dominant operational categories.
 - Window-based ranking highlights districts with the highest cooperative density.
-- Data integrity checks confirm minimal structural anomalies within the dataset.
+- Data integrity validation confirms minimal structural inconsistencies within the dataset.
 
-## Tools and Technologies
+## Technologies Used
 
 - MySQL
 - MySQL Workbench
-- Advanced SQL (CTE, Window Functions, Aggregation, Ranking)
+- Advanced SQL (Window Functions, Ranking, Aggregation, View Abstraction)
 
 ---
 
-This project demonstrates intermediate-level SQL proficiency in data transformation, segmentation, and analytical exploration within a relational database environment.
+This project demonstrates structured SQL-based data exploration, transformation, and analytical segmentation within a relational database environment.
