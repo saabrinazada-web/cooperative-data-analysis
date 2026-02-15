@@ -1,54 +1,57 @@
-# Cooperative Sustainability Analysis
+# Cooperative Distribution Analysis Using SQL
 
 ## Overview
 
-This project examines structural factors associated with cooperative sustainability using administrative and monitoring data from cooperatives supervised by the Department of Cooperatives and MSMEs of Semarang City.
+This project presents an exploratory data analysis of a cooperative registry dataset using MySQL. The objective is to transform raw structured data into analytical insights through systematic data cleaning, feature engineering, aggregation, and ranking techniques.
 
-The analysis evaluates the relationship between cooperative age, number of registered members, and operational status (active or inactive) in order to identify structural patterns linked to organizational continuity.
+The dataset consists of 100 cooperative entities containing cooperative names and address information.
 
-The objective is to support evidence-based monitoring and institutional evaluation within the cooperative sector.
+## Objectives
 
-## Research Objectives
+The analysis aims to:
 
-This study investigates whether:
+- Evaluate data quality and structural consistency
+- Extract district-level information from unstructured address fields
+- Classify cooperatives based on operational type
+- Measure category distribution and contribution percentages
+- Identify geographic concentration patterns
+- Detect duplicate entity records
 
-- Older cooperatives demonstrate stronger operational stability.
-- Cooperatives with larger membership bases exhibit a higher likelihood of remaining active.
-
-The analysis focuses on identifying statistically meaningful associations rather than establishing causal relationships.
-
-## Dataset Description
+## Dataset
 
 The dataset includes:
 
-- Cooperative age (years of operation)
-- Number of registered members
-- Operational status (Active / Inactive)
+- Cooperative identifier (no)
+- Cooperative name
+- Cooperative address
 
-These variables represent structural indicators commonly used in cooperative supervision and performance assessment.
+The address field was transformed to derive district-level grouping for spatial distribution analysis.
 
 ## Methodology
 
-The analytical process consisted of:
+The analytical workflow included:
 
-1. Data validation and cleaning  
-2. Variable classification and transformation  
-3. Statistical association and correlation analysis  
-4. Interpretation of structural relationships with operational status  
+1. Data cleaning and normalization using a dedicated SQL VIEW layer  
+2. Feature engineering through string manipulation functions  
+3. Aggregation and segmentation by cooperative category  
+4. Window functions for ranking and contribution analysis  
+5. Data integrity validation through duplicate detection  
 
-The analysis was conducted using structured statistical evaluation methods to identify relevant organizational patterns.
-
-## Tools and Technologies
-
-- Jamovi  
-- Microsoft Excel  
+The analysis focuses on structural exploration and descriptive insights rather than predictive modeling.
 
 ## Key Insights
 
-- Organizational maturity shows observable association with operational continuity.
-- Membership scale appears to contribute to institutional resilience.
-- Statistical validation supports data-driven cooperative monitoring practices.
+- Cooperative distribution shows geographic concentration in specific districts.
+- Consumer and Savings & Loans cooperatives represent the dominant operational categories.
+- Window-based ranking highlights districts with the highest cooperative density.
+- Data integrity checks confirm minimal structural anomalies within the dataset.
 
-## Project Context
+## Tools and Technologies
 
-Developed as part of institutional monitoring and evaluation activities at the Department of Cooperatives and MSMEs of Semarang City.
+- MySQL
+- MySQL Workbench
+- Advanced SQL (CTE, Window Functions, Aggregation, Ranking)
+
+---
+
+This project demonstrates intermediate-level SQL proficiency in data transformation, segmentation, and analytical exploration within a relational database environment.
